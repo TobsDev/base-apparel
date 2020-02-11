@@ -1,6 +1,7 @@
 import React from 'react';
 import MailForm from '../components/form';
-import HeroImage from '../components/hero-image';
+import HeroMobile from '../components/hero-image';
+import HeroDesktop from '../components/hero-desktop';
 import ComingSoonHeader from '../layout/coming-soon-header';
 import Content from '../components/content';
 
@@ -10,7 +11,8 @@ class ComingSoon extends React.Component {
         return (
             <div className="comingSoon">
                 <ComingSoonHeader />
-                <HeroImage />
+                <HeroMobile />
+                <HeroDesktop />
                 <Content />
                 <MailForm />
             </div>

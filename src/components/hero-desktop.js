@@ -14,35 +14,37 @@ import './hero-image'
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const HeroMobile = () => {
-  const heroMobile = useStaticQuery(graphql`
-  {
-    file(relativePath: {eq: "hero-mobile.jpg"}) {
-      childImageSharp {
-        fluid(webpQuality: 100, maxWidth: 600) {
-          aspectRatio
-          sizes
-          src
-          srcSet
-          originalImg
-          tracedSVG
-          srcWebp
-          presentationHeight
-          presentationWidth
-        }
+const HeroDesktop = () => {
+  
+const heroDesktop = useStaticQuery(graphql`
+{
+  file(relativePath: {eq: "hero-desktop.jpg"}) {
+    childImageSharp {
+      fluid(webpQuality: 100) {
+        aspectRatio
+        sizes
+        src
+        srcSet
+        originalImg
+        tracedSVG
+        srcWebp
+        presentationHeight
+        presentationWidth
       }
     }
   }
+}
 `)
 
+  // serve one image per case and apply according class
   return (
     <div className="heroImage">
       <Img  
-        fluid={heroMobile.file.childImageSharp.fluid}
+        fluid={heroDesktop.file.childImageSharp.fluid}
         alt="girl with jewlery"  
         fadeIn={true}
         durationFadeIn={3500}
-        className="heroImage--small"
+        className="heroImage--large"
       />
     </div>
   )
@@ -50,5 +52,5 @@ const HeroMobile = () => {
   
 }
 
-export default HeroMobile
+export default HeroDesktop
 
