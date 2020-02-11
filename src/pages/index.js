@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
-import '../scss/main.scss'
+import React from 'react';
+import ComingSoon from './coming-soon';
+import '../scss/main.scss';
 
 
 class IndexPage extends React.Component {
   render () {
     return (
-      <div className="indexPage">
-        Boilerplate, ready to go
-      </div>
+      <ComingSoon />
     );
   }
 };

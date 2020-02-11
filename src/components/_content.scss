@@ -1,0 +1,53 @@
+@import '../base/variables';
+
+.content {
+    padding-right: $standard-padding;
+    padding-left: $standard-padding;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    background-color: $gradient1;
+    grid-area: content;
+    max-width: $content-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content__top-headline {
+    font-weight: $light;
+    text-transform: uppercase;
+}
+
+
+.content__bottom-headline {
+    color: $dark-grayish-red;
+    font-weight: $regular;
+    text-transform: uppercase;
+}
+
+.content__copy {
+    margin-top: 1rem;
+}
+
+@media (min-width: $medium-break) {
+    .content {
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 4rem;
+        margin-bottom: 0;
+        max-width: $content-width;
+        justify-self: center;
+        //background: $gradient1;
+    }
+
+    .content__top-headline {
+        text-align: left;
+    }
+
+    .content__bottom-headline {
+        text-align: left;
+    }
+
+    .content__copy {
+        text-align: left;
+    }
+}

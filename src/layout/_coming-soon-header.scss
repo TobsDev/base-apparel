@@ -1,0 +1,29 @@
+@import '../base/variables';
+
+
+.coming-soon-header {
+    padding-top: $standard-padding;
+    padding-bottom: $standard-padding;
+    text-align: start;
+    padding-left: $standard-padding;
+    grid-area: header;
+}
+
+.coming-soon-header__logo {
+    height: 1.375rem;
+}
+
+@media (min-width: $medium-break) {
+    .coming-soon-header {
+        padding-top: $padding-large;
+        padding-bottom: $standard-padding;
+        padding-left: 0;
+        width: $content-width;
+        justify-self: center;
+    }
+
+    .coming-soon-header__logo {
+        height: 2rem;
+    }
+}
+

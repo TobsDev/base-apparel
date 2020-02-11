@@ -1,0 +1,47 @@
+//import Google font
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap');
+@import './colors';
+@import './variables';
+
+
+$josefin: 'Josefin Sans', sans-serif;
+$regular-font-size: 15px;
+$light: 300;
+$regular: 400;
+$bold: 600;
+$small-font: 0.875rem;
+$large-font: 2.375rem;
+$headline-large: 4rem;
+$mobile-line-height: 1.675;
+$desktop-line-height: 1.75rem;
+
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: $regular;
+    color: $desaturated-red;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: $large-font;
+    letter-spacing: 10px;
+}
+
+p {
+    font-size: $small-font;
+    line-height: $mobile-line-height;
+    opacity: 0.7;
+}
+
+@media (min-width: $medium-break) {
+    p {
+        font-size: revert;
+        line-height: $desktop-line-height;
+    }
+
+    h1 {
+        font-size: $headline-large;
+    }
+}
+

@@ -1,0 +1,27 @@
+@import '../base/variables';
+
+.heroImage {
+    //width: 100%;
+    grid-area: hero;
+}
+
+.heroImage--small {
+
+}
+
+.heroImage--large {
+    display: none;
+}
+
+@media (min-width: $medium-break) {
+
+    .heroImage--large {
+        display: block;
+        height: 100vh;
+    }
+
+    .heroImage--small {
+        display: none;
+    }
+
+}

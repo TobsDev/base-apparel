@@ -1,0 +1,21 @@
+@import '../base/colors';
+@import '../base/variables';
+
+.comingSoon {
+    padding-bottom: 6rem;
+    background: bottom center, $gradient1;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: $medium-break) {
+    .comingSoon {
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        grid-template-areas: 
+            'header hero'
+            'content hero'
+            'form hero';
+        padding-bottom: 0;
+    }
+}
