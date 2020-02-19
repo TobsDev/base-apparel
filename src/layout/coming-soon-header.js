@@ -4,7 +4,9 @@ import './coming-soon-header';
 
 const ComingSoonHeader = () => (
     <div className="coming-soon-header">
-        <img src={logo} alt="" className="coming-soon-header__logo"/>
+        <a href="/">
+            <img src={logo} alt="" className="coming-soon-header__logo"/>
+        </a>
     </div>
 );
 
