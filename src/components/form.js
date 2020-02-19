@@ -59,7 +59,7 @@ class MailForm extends React.Component {
         return (
             <div className="mailForm">
                 <form 
-                    action="http://localhost:8000/" 
+                    action="/" 
                     className={`mailForm__form ${this.state.showWarning ? "mailForm--invalid" : ""}`}
                     noValidate
                     onSubmit={event => this._handleSubmit(event)}
